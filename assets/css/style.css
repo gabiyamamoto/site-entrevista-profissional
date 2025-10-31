@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* container */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ED8B2E;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* texto e icone */
+header h2 a {
+    display: flex;
+    align-items: center;
+    margin: 0 30px auto;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header h2 a:hover{
+    transition: all 0.3s;
+    transform: scale(1.02);
+}
+
+/* icone */
+header h2 i {
+    margin-right: 9px;
+    font-size: 18px;
+}
+
+.banner {
+  position: relative;
+  width: 90%;              /* deixa o banner menor que a tela */
+  max-width: 1000px;       /* limita o tamanho em telas grandes */
+  height: 280px;           /* altura controlada, tipo banner compacto */
+  margin: 2rem auto;       /* centraliza o banner na página */
+  border-radius: 1rem;     /* cantos arredondados bonitos */
+  overflow: hidden;        /* corta o excesso da imagem */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* cobre sem distorcer */
+  object-position: center;  /* centraliza o foco */
+  display: block;
+}
+
+.banner h2 {
+  position: absolute;
+  top: 50%;                /* centraliza verticalmente */
+  left: 50%;               /* centraliza horizontalmente */
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
