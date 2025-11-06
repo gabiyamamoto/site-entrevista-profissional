@@ -20,7 +20,7 @@ header {
 }
 
 /* texto e icone */
-header h2 a {
+header h1 a {
     display: flex;
     align-items: center;
     margin: 0 30px auto;
@@ -30,40 +30,41 @@ header h2 a {
     color: rgb(255, 255, 255);
 }
 
-header h2 a:hover{
+header h1 a:hover{
     transition: all 0.3s;
     transform: scale(1.02);
 }
 
 /* icone */
-header h2 i {
+header h1 i {
     margin-right: 9px;
     font-size: 18px;
 }
 
 .banner {
   position: relative;
-  width: 90%;              /* deixa o banner menor que a tela */
-  max-width: 1000px;       /* limita o tamanho em telas grandes */
-  height: 280px;           /* altura controlada, tipo banner compacto */
-  margin: 2rem auto;       /* centraliza o banner na página */
-  border-radius: 1rem;     /* cantos arredondados bonitos */
-  overflow: hidden;        /* corta o excesso da imagem */
+  width: 90%;
+  max-width: 1000px;
+  height: 280px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* cobre sem distorcer */
-  object-position: center;  /* centraliza o foco */
+  object-fit: cover;
+  object-position: center;
   display: block;
+  filter: blur(3px);
 }
 
 .banner h2 {
   position: absolute;
-  top: 50%;                /* centraliza verticalmente */
-  left: 50%;               /* centraliza horizontalmente */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 2rem;
