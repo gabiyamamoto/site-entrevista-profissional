@@ -7,6 +7,20 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 /* container */
 header {
   display: flex;
@@ -103,7 +117,7 @@ header nav i {
   text-align: center;
 }
 
-.titulo-bloco {
+.titulo-pagina {
   color: #2c3e50;
   font-size: 2.2rem;
   font-weight: 700;
@@ -124,7 +138,8 @@ header nav i {
   margin: 2rem;
 }
 
-.texto-resumo, .texto-biografia {
+.texto-resumo,
+.texto-biografia {
   text-align: justify;
   max-width: 1000px;
   width: 100%;
@@ -225,6 +240,75 @@ footer a:hover {
   max-width: 90%;
 }
 
+.entrevista {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.container-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.pergunta-resposta {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #bd7d3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pergunta-resposta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pergunta {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  cursor: context-menu;
+}
+
+.resposta {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  cursor: context-menu;
+}
+
+.destaque {
+  margin: 2.5rem 0;
+  padding: 1.8rem;
+  background-color: #bd7d3d;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destaque:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destaque p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: context-menu;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 1rem;
@@ -305,5 +389,58 @@ footer a:hover {
   footer a {
     width: 90%;
     margin: 0.4rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-texto {
+    margin: 1.5rem auto;
+  }
+  
+  .pergunta-resposta {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pergunta {
+    font-size: 1rem;
+  }
+  
+  .resposta {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .destaque {
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+  
+  .destaque p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pergunta-resposta {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .pergunta {
+    font-size: 0.95rem;
+  }
+  
+  .resposta {
+    font-size: 0.9rem;
+  }
+  
+  .destaque {
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+  }
+  
+  .destaque p {
+    font-size: 1rem;
   }
 }
