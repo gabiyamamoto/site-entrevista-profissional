@@ -139,7 +139,7 @@ header nav i {
 }
 
 .texto-resumo,
-.texto-biografia {
+.texto-biografia, .texto-conclusao {
   text-align: justify;
   max-width: 1000px;
   width: 100%;
@@ -229,7 +229,7 @@ footer a:hover {
   cursor: context-menu;
 }
 
-.container-biografia {
+.container-biografia, .container-conclusao {
   display: flex;
   justify-content: center;
   margin: 1rem;
